@@ -16,7 +16,7 @@ If you are new to Python, the easiest way of using the WettingAngleEstimator is 
 1. Save a copy of the Google Colab Notebook by using File > Save a copy in Drive.
 2. Run the first cell by using Ctrl + Enter.
 3. If you would like to use the interactive mode, where the code asks for user inputs, run the cell in the interactive mode section.
-4. If you would like to use the type-in mode, where you can type in the information about the metal-ceramic pairs and temperature of interest before running the code, enter the necessary information following the instructions in the first cell of the type-in mode section and run the cells therein.
+4. If you would like to specify the systems of interest before running the code, enter the necessary information following the instruction in the first cell of the type-in mode section and run the cells therein.
 
 If you are experienced in Python, feel free to use either .ipynb or .py file in whatever way is convenient for you.
 
