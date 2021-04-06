@@ -37,9 +37,11 @@ Specify a wetting angle range of interest if you would like to collect only the 
 
 
 
-## Citing
+## How to cite
 
-If you use this code or data, please cite the following as appropriate.
+If you use this code or data in your research, please consider citing the following work:
+
+So Yeon Kim, Ju Li. Machine Learning of Metal-Ceramic Wettability. Journal of Materiomics, 2021. [doi.org/10.1016/j.jmat.2021.03.014](https://doi.org/10.1016/j.jmat.2021.03.014)
 
 ```
 @article{KIM2021,
