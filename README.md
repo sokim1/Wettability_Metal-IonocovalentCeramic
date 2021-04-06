@@ -37,7 +37,7 @@ If you would like to collect only the results for the pairs of which predicted w
 
 
 
-## How to cite
+## Citing
 
 If you use this code or data, please cite the following as appropriate.
 
