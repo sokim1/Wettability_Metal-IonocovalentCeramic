@@ -24,7 +24,7 @@ If you are experienced in Python, feel free to use either .ipynb or .py file in 
 
 The current version allows three different ways of specifying the metal-ceramic pairs of interest.
 1. One metal-ceramic pair (e.g., Fe and Si1O2)
-2. One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): `prediction/lists_Li-LEIcandidatess.csv` is an exemplary .csv file.
+2. One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): `prediction/lists_Li-LEIcandidates.csv` is an exemplary .csv file.
 3. One metal and a list of ceramics retrieved from Inorganic Crystal Structure Database (e.g., Al and all the oxides in the ICSD catalog that have a bandgap greater 2.5 eV)
 
 ### - Define a temperature range of interest 
