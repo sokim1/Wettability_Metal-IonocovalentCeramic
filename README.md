@@ -1,4 +1,4 @@
-# Wettability_Metal-IonocovalentCeramic
+# Metal-Ionocovalent Ceramic Wettability
 
 This repository provides two main components:
 
@@ -7,13 +7,6 @@ This repository provides two main components:
 
 The following paper describes the details of the machine learning model developed to predict the metal-ionocovalent ceramic wettability: [Machine Learning of Metal-Ceramic Wettability](https://doi.org/10.1016/j.jmat.2021.03.014)
 
-## Table of Contents
-
-- [Usage](#usage)
-  - [Define a customized dataset](#define-a-customized-dataset)
-  - [Train a CGCNN model](#train-a-cgcnn-model)
-  - [Predict material properties with a pre-trained CGCNN model](#predict-material-properties-with-a-pre-trained-cgcnn-model)
-- [How to cite](#how-to-cite)
 
 
 ## Usage
@@ -41,3 +34,22 @@ Define the lowest temperature, the highest temperature, and the temperature inte
 ### Define a wetting angle range of interest
 
 If you would like to collect only the results for the pairs of which predicted wetting angles are in a certain range, specify a wetting angle range of interest.
+
+
+
+## How to cite
+
+If you use this code or data, please cite the following as appropriate.
+
+```
+@article{KIM2021,
+title = {Machine Learning of Metal-Ceramic Wettability},
+journal = {Journal of Materiomics},
+year = {2021},
+issn = {2352-8478},
+doi = {https://doi.org/10.1016/j.jmat.2021.03.014},
+url = {https://www.sciencedirect.com/science/article/pii/S2352847821000629},
+author = {So Yeon Kim and Ju Li},
+keywords = {Metal-ceramic wettability, Wetting angle, Machine learning, High-throughput screening, Solid-state batteries},
+}
+```
