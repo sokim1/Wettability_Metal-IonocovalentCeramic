@@ -9,173 +9,35 @@ The following paper describes the details of the machine learning model develope
 
 ## Table of Contents
 
-- [How to cite](#how-to-cite)
-- [Prerequisites](#prerequisites)
 - [Usage](#usage)
   - [Define a customized dataset](#define-a-customized-dataset)
   - [Train a CGCNN model](#train-a-cgcnn-model)
   - [Predict material properties with a pre-trained CGCNN model](#predict-material-properties-with-a-pre-trained-cgcnn-model)
-- [Data](#data)
-- [Authors](#authors)
-- [License](#license)
+- [How to cite](#how-to-cite)
 
-
-
-##  Prerequisites
-
-This package requires:
-
-- [PyTorch](http://pytorch.org)
-- [scikit-learn](http://scikit-learn.org/stable/)
-- [pymatgen](http://pymatgen.org)
-
-If you are new to Python, the easiest way of installing the prerequisites is via [conda](https://conda.io/docs/index.html). After installing [conda](http://conda.pydata.org/), run the following command to create a new [environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) named `cgcnn` and install all prerequisites:
-
-```bash
-conda upgrade conda
-conda create -n cgcnn python=3 scikit-learn pytorch torchvision pymatgen -c pytorch -c conda-forge
-```
-
-*Note: this code is tested for PyTorch v1.0.0+ and is not compatible with versions below v0.4.0 due to some breaking changes.
-
-This creates a conda environment for running CGCNN. Before using CGCNN, activate the environment by:
-
-```bash
-source activate cgcnn
-```
-
-Then, in directory `cgcnn`, you can test if all the prerequisites are installed properly by running:
-
-```bash
-python main.py -h
-python predict.py -h
-```
-
-This should display the help messages for `main.py` and `predict.py`. If you find no error messages, it means that the prerequisites are installed properly.
-
-After you finished using CGCNN, exit the environment by:
-
-```bash
-source deactivate
-```
 
 ## Usage
 
-### Define a customized dataset 
+If you are new to Python, the easiest way of using the WettingAngleEstimator is via [Google Colab Notebook](https://colab.research.google.com/drive/1lrOwH4iu7_jRMpPh8X1SnAMJn5eJCD8V?usp=sharing).
 
-To input crystal structures to CGCNN, you will need to define a customized dataset. Note that this is required for both training and predicting. 
+1. Save a copy of the aforementioned Google Colab Notebook by using File > Save a copy in Drive.
+2. Run the first cell by using Ctrl + Enter.
+3. If you would like to use the interactive mode, where the code asks for user inputs, run the cell in the interactive mode section.
+4. If you would like to use the type-in mode, where you can type in the information about the metal-ceramic pairs and temperature of interest before running the code, enter the necessary information following the instructions in the first cell of the type-in mode section and run the cells therein.
 
-Before defining a customized dataset, you will need:
+If you are experienced in Python, feel free to use either .ipynb or .py file in whatever way is convenient for you.
 
-- [CIF](https://en.wikipedia.org/wiki/Crystallographic_Information_File) files recording the structure of the crystals that you are interested in
-- The target properties for each crystal (not needed for predicting, but you need to put some random numbers in `id_prop.csv`)
+### Define metal-ceramic pairs of interest 
 
-You can create a customized dataset by creating a directory `root_dir` with the following files: 
+The current version allows three different ways of specifying the metal-ceramic pairs of interest.
+1. One metal-ceramic pair (e.g., Fe and Si1O2)
+2. One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): `lists_Li-LEIcandidatess.csv` is an exemplary .csv file.
+3. One metal and a list of ceramics retrieved from Inorganic Crystal Structure Database (e.g., Al and all the oxides with a bandgap greater 2.5 eV in the ICSD database)
 
-1. `id_prop.csv`: a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file with two columns. The first column recodes a unique `ID` for each crystal, and the second column recodes the value of target property. If you want to predict material properties with `predict.py`, you can put any number in the second column. (The second column is still needed.)
+### Define a temperature range of interest 
 
-2. `atom_init.json`: a [JSON](https://en.wikipedia.org/wiki/JSON) file that stores the initialization vector for each element. An example of `atom_init.json` is `data/sample-regression/atom_init.json`, which should be good for most applications.
+Define the lowest temperature, the highest temperature, and the temperature interval of interest.
 
-3. `ID.cif`: a [CIF](https://en.wikipedia.org/wiki/Crystallographic_Information_File) file that recodes the crystal structure, where `ID` is the unique `ID` for the crystal.
+### Define a wetting angle range of interest
 
-The structure of the `root_dir` should be:
-
-```
-root_dir
-├── id_prop.csv
-├── atom_init.json
-├── id0.cif
-├── id1.cif
-├── ...
-```
-
-There are two examples of customized datasets in the repository: `data/sample-regression` for regression and `data/sample-classification` for classification. 
-
-**For advanced PyTorch users**
-
-The above method of creating a customized dataset uses the `CIFData` class in `cgcnn.data`. If you want a more flexible way to input crystal structures, PyTorch has a great [Tutorial](http://pytorch.org/tutorials/beginner/data_loading_tutorial.html#sphx-glr-beginner-data-loading-tutorial-py) for writing your own dataset class.
-
-### Train a CGCNN model
-
-Before training a new CGCNN model, you will need to:
-
-- [Define a customized dataset](#define-a-customized-dataset) at `root_dir` to store the structure-property relations of interest.
-
-Then, in directory `cgcnn`, you can train a CGCNN model for your customized dataset by:
-
-```bash
-python main.py root_dir
-```
-
-You can set the number of training, validation, and test data with labels `--train-size`, `--val-size`, and `--test-size`. Alternatively, you may use the flags `--train-ratio`, `--val-ratio`, `--test-ratio` instead. Note that the ratio flags cannot be used with the size flags simultaneously. For instance, `data/sample-regression` has 10 data points in total. You can train a model by:
-
-```bash
-python main.py --train-size 6 --val-size 2 --test-size 2 data/sample-regression
-```
-or alternatively
-```bash
-python main.py --train-ratio 0.6 --val-ratio 0.2 --test-ratio 0.2 data/sample-regression
-```
-
-You can also train a classification model with label `--task classification`. For instance, you can use `data/sample-classification` by:
-
-```bash
-python main.py --task classification --train-size 5 --val-size 2 --test-size 3 data/sample-classification
-```
-
-After training, you will get three files in `cgcnn` directory.
-
-- `model_best.pth.tar`: stores the CGCNN model with the best validation accuracy.
-- `checkpoint.pth.tar`: stores the CGCNN model at the last epoch.
-- `test_results.csv`: stores the `ID`, target value, and predicted value for each crystal in test set.
-
-### Predict material properties with a pre-trained CGCNN model
-
-Before predicting the material properties, you will need to:
-
-- [Define a customized dataset](#define-a-customized-dataset) at `root_dir` for all the crystal structures that you want to predict.
-- Obtain a [pre-trained CGCNN model](pre-trained) named `pre-trained.pth.tar`.
-
-Then, in directory `cgcnn`, you can predict the properties of the crystals in `root_dir`:
-
-```bash
-python predict.py pre-trained.pth.tar root_dir
-```
-
-For instace, you can predict the formation energies of the crystals in `data/sample-regression`:
-
-```bash
-python predict.py pre-trained/formation-energy-per-atom.pth.tar data/sample-regression
-```
-
-And you can also predict if the crystals in `data/sample-classification` are metal (1) or semiconductors (0):
-
-```bash
-python predict.py pre-trained/semi-metal-classification.pth.tar data/sample-classification
-```
-
-Note that for classification, the predicted values in `test_results.csv` is a probability between 0 and 1 that the crystal can be classified as 1 (metal in the above example).
-
-After predicting, you will get one file in `cgcnn` directory:
-
-- `test_results.csv`: stores the `ID`, target value, and predicted value for each crystal in test set. Here the target value is just any number that you set while defining the dataset in `id_prop.csv`, which is not important.
-
-
-
-## How to cite
-
-If you use this code or data, please cite the following as appropriate.
-
-```
-@article{KIM2021,
-title = {Machine Learning of Metal-Ceramic Wettability},
-journal = {Journal of Materiomics},
-year = {2021},
-issn = {2352-8478},
-doi = {https://doi.org/10.1016/j.jmat.2021.03.014},
-url = {https://www.sciencedirect.com/science/article/pii/S2352847821000629},
-author = {So Yeon Kim and Ju Li},
-keywords = {Metal-ceramic wettability, Wetting angle, Machine learning, High-throughput screening, Solid-state batteries},
-}
-```
-
+If you would like to collect only the results for the pairs of which predicted wetting angles are in a certain range, specify a wetting angle range of interest.
