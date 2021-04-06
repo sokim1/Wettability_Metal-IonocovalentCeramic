@@ -5,9 +5,7 @@ This repository provides two main components:
 - Metal-ionocovalent ceramic wettability dataset.
 - Python code for predicting the wettability of arbitrary metal-ionocovalent ceramic pairs.
 
-The following paper describes the details of the machine learning model developed to predict the metal-ionocovalent ceramic wettability:
-
-[Machine Learning of Metal-Ceramic Wettability](https://doi.org/10.1016/j.jmat.2021.03.014)
+The following paper describes the details of the machine learning model developed to predict the metal-ionocovalent ceramic wettability: [Machine Learning of Metal-Ceramic Wettability](https://doi.org/10.1016/j.jmat.2021.03.014)
 
 ## Table of Contents
 
