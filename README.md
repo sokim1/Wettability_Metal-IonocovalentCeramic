@@ -13,8 +13,8 @@ The following paper describes the details of the machine learning model develope
 
 If you are new to Python, the easiest way of using the WettingAngleEstimator is via [Google Colab Notebook](https://colab.research.google.com/drive/1lrOwH4iu7_jRMpPh8X1SnAMJn5eJCD8V?usp=sharing).
 
-1. Save a copy of the Google Colab Notebook by using File > Save a copy in Drive.
-2. Run the first cell by using Ctrl + Enter.
+1. Save a copy of the Google Colab Notebook by using "File > Save a copy in Drive".
+2. Execute the first cell (To execute the cell, hover the mouse over [] and press the play button to the upper left. Or press shift-enter to execute.)
 3. If you would like to use the interactive mode, where the code asks for user inputs, run the cell in the interactive mode section.
 4. If you would like to specify the systems of interest before running the code, enter the necessary information following the instruction in the first cell of the type-in mode section and run the cells therein.
 
