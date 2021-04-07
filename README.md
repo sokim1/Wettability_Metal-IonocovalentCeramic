@@ -7,6 +7,8 @@ This repository provides two main components:
 
 The following paper describes the details of the machine learning model developed to predict the metal-ionocovalent ceramic wettability: [Machine Learning of Metal-Ceramic Wettability](https://doi.org/10.1016/j.jmat.2021.03.014)
 
+
+
 ## Workflow of the WettingAngleEstimator
 
 #### 1. Define metal-ceramic pairs of interest 
@@ -25,6 +27,7 @@ Define the lowest temperature, the temperature range, and the temperature interv
 Specify a wetting angle range of interest. For example, if you are interested only in metal-ionocovalent ceramic pairs of which wetting angles are expected to be below 90 degree, you need to enter below and 90 for the questions that the code asks to enter.
 
 
+
 ## How to run the WettingAngleEstimator
 
 If you are new to Python, the easiest way of using the WettingAngleEstimator is via [Google Colab Notebook](https://colab.research.google.com/drive/1lrOwH4iu7_jRMpPh8X1SnAMJn5eJCD8V?usp=sharing).
@@ -36,6 +39,7 @@ If you are new to Python, the easiest way of using the WettingAngleEstimator is 
     - Type-in mode requires a user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information, execute the first cell and the second cell sequentially.
 
 If you are experienced in Python, feel free to use either .ipynb or .py file in whatever way is convenient for you.
+
 
 
 ## How to cite
