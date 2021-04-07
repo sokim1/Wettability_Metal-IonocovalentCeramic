@@ -26,7 +26,7 @@ Define the lowest temperature, the temperature range, and the temperature interv
 
 #### 3. Define the wetting angle range of interest
 
-Specify a wetting angle range of interest. For example, if you are interested only in metal-ionocovalent ceramic pairs of which wetting angles are expected to be below 90 degree, you need to enter below and 90 for the questions that the code asks to enter.
+Specify the wetting angle range of interest. For example, if you are interested only in metal-ionocovalent ceramic pairs of which wetting angles are expected to be below 90 degree, you need to enter below and 90 for the questions that the code asks to enter.
 
 
 
