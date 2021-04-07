@@ -42,6 +42,12 @@ If you are experienced in Python, feel free to use either .ipynb or .py file in 
 
 
 
+## How to contribute
+
+The prediction accuracy could be improved by increasing the number of datapoints used to train the machine learning model. We would appreciate it if you could please let us know using this [Google Form]() in case you find experimental results that are not in `dataset/database.csv` from literature or publish new experimental results by yourself. The database will be updated monthly and the name/affiliation of contributors will be listed in `dataset/database-contributors.csv`.
+
+
+
 ## How to cite
 
 If you use this code or data in your research, please consider citing the following work:
