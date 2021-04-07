@@ -37,6 +37,7 @@ If you are new to Python, the easiest way of using the WettingAngleEstimator is 
 3. The current version provides two different ways of specifying the systems of interest; the interactive mode and the type-in mode. Each mode can be found below the first cell.
     - Interactive mode asks for the necessary information during operation. Execute the cell and answer the questions that appear.
     - Type-in mode requires a user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information, execute the first cell and the second cell sequentially.
+4. Find your results by clicking the folder icon on the left sidebar.
 
 If you are experienced in Python, feel free to use either .ipynb or .py file in whatever way is convenient for you.
 
