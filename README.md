@@ -22,11 +22,11 @@ The current version can handle three different cases:
 
 #### 2. Define the temperature range of interest 
 
-Define the lowest temperature, the temperature range, and the temperature interval of interest. For example, if you are interested in wetting angles at 1800 K, 1900 K, and 2000 K, you need to enter 1800, 200, and 100 for the lowest temperature, the temperature range, and the temperature interval of interest, respectively. 
+Define the lowest temperature, the temperature range, and the temperature interval of interest. For example, if you are interested in wetting angles at 1800 K, 1900 K, and 2000 K, you need to enter "1800", "200", and "100" for the lowest temperature, the temperature range, and the temperature interval of interest, respectively. 
 
 #### 3. Define the wetting angle range of interest
 
-Specify the wetting angle range of interest. For example, if you are interested only in metal-ionocovalent ceramic pairs of which wetting angles are expected to be below 90 degree, you need to enter below and 90 for the questions that the code asks to enter.
+Specify the wetting angle range of interest. For example, if you are interested only in metal-ionocovalent ceramic pairs of which wetting angles are expected to be below 90 degree, you need to enter "-90".
 
 
 
