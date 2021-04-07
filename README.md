@@ -18,7 +18,7 @@ The current version can handle three different cases:
 - One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): `prediction/lists_Li-LEIcandidates.csv` is an exemplary .csv file.
 - One metal and a list of ceramics retrieved from Inorganic Crystal Structure Database (e.g., Al and all the oxides in the ICSD catalog that have a bandgap greater 2.5 eV)
 
-*Note: the prediction accuracy for the material pairs other than metal-ionocovalent ceramic pairs could be much lower.*
+*Note: The prediction accuracy for the material pairs other than metal-ionocovalent ceramic pairs could be much lower.*
 
 #### 2. Define a temperature range of interest 
 
