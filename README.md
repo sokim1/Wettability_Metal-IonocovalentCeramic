@@ -9,7 +9,7 @@ The following paper describes the details of the machine learning model develope
 
 
 
-## Workflow of the WettingAngleEstimator
+## Workflow of the WettingAnglePredictor
 
 #### 1. Define metal-ionocovalent ceramic pairs of interest 
 
@@ -30,7 +30,7 @@ Specify the wetting angle range of interest. For example, if you are interested 
 
 
 
-## How to run the WettingAngleEstimator
+## How to run the WettingAnglePredictor
 
 If you are new to Python, the easiest way of using the WettingAngleEstimator is via [Google Colab Notebook](https://colab.research.google.com/drive/1lrOwH4iu7_jRMpPh8X1SnAMJn5eJCD8V?usp=sharing).
 
