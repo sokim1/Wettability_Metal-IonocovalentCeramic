@@ -21,18 +21,20 @@ If you are new to Python, the easiest way of using the WettingAngleEstimator is 
 
 If you are experienced in Python, feel free to use either .ipynb or .py file in whatever way is convenient for you.
 
-### - Define metal-ceramic pairs of interest 
+### Workflow
+
+#### - Define metal-ceramic pairs of interest 
 
 The current version allows three different ways of specifying the metal-ceramic pairs of interest.
 1. One metal-ceramic pair (e.g., Fe and Si1O2)
 2. One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): `prediction/lists_Li-LEIcandidates.csv` is an exemplary .csv file.
 3. One metal and a list of ceramics retrieved from Inorganic Crystal Structure Database (e.g., Al and all the oxides in the ICSD catalog that have a bandgap greater 2.5 eV)
 
-### - Define a temperature range of interest 
+#### - Define a temperature range of interest 
 
 Define the lowest temperature, the highest temperature, and the temperature interval of interest.
 
-### - Define a wetting angle range of interest
+#### - Define a wetting angle range of interest
 
 Specify a wetting angle range of interest if you would like to collect only the results for the pairs of which predicted wetting angles are in a certain range,
 
