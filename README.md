@@ -16,9 +16,9 @@ If you are new to Python, the easiest way of using the WettingAngleEstimator is 
 1. Save a copy of the Google Colab Notebook by using "File > Save a copy in Drive".
 2. Execute the first cell; to execute a cell, hover the mouse over [ ] and press the play button to the upper left (or just press shift-enter). It may take a few minutes to be completed.
 3. The current version provides two different ways of specifying the systems of interest; the interactive mode and the type-in mode.
-  - Interactive mode
+    - Interactive mode
   This mode asks for the necessary information during operation. Execute the cell and answer the questions that appear.
-  - Type-in mode
+    - Type-in mode
   This mode requires the user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information execute the first cell and the second cell sequentially.
 
 If you are experienced in Python, feel free to use either .ipynb or .py file in whatever way is convenient for you.
