@@ -35,7 +35,7 @@ Specify the wetting angle range of interest. For example, if you are interested 
 If you are new to Python, the easiest way of using the WettingAngleEstimator is via [Google Colab Notebook](https://colab.research.google.com/drive/1lrOwH4iu7_jRMpPh8X1SnAMJn5eJCD8V?usp=sharing).
 
 1. Save a copy of the Google Colab Notebook by using "File > Save a copy in Drive".
-2. Execute the first cell; to execute a cell, hover the mouse over [ ] on the upper left of the cell and press the play button that appears (or just press Shift- + Enter). It may take a few minutes to be completed.
+2. Execute the first cell; to execute a cell, hover the mouse over square brackets([ ]) on the upper left of the cell and press the play button that appears (or just press Shift- + Enter). It may take a few minutes to be completed.
 3. The current version provides two different ways of specifying the systems of interest; the interactive mode and the type-in mode. Each mode can be found below the first cell.
     - Interactive mode asks for the necessary information during operation. Execute the cell and answer the questions that appear.
     - Type-in mode requires a user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information, execute the first cell and the second cell sequentially.
