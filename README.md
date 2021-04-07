@@ -11,18 +11,18 @@ The following paper describes the details of the machine learning model develope
 
 #### 1. Define metal-ceramic pairs of interest 
 
-The current version allows three different ways of specifying the metal-ceramic pairs of interest.
-- One metal-ceramic pair (e.g., Fe and Si1O2)
+The current version can handle three different cases:
+- One metal-one ceramic pair (e.g., Fe and Si1O2)
 - One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): `prediction/lists_Li-LEIcandidates.csv` is an exemplary .csv file.
 - One metal and a list of ceramics retrieved from Inorganic Crystal Structure Database (e.g., Al and all the oxides in the ICSD catalog that have a bandgap greater 2.5 eV)
 
 #### 2. Define a temperature range of interest 
 
-Define the lowest temperature, the highest temperature, and the temperature interval of interest.
+Define the lowest temperature, the temperature range, and the temperature interval of interest. For example, if you are interested in wetting angles at 1800 K, 1900 K, and 2000 K, you need to enter 1800, 200, and 100 for the lowest temperature, the temperature range, and the temperature interval of interest, respectively. 
 
 #### 3. Define a wetting angle range of interest
 
-Specify a wetting angle range of interest if you would like to collect only the results for the pairs of which predicted wetting angles are in a certain range,
+Specify a wetting angle range of interest. For example, if you are interested only in metal-ionocovalent ceramic pairs of which wetting angles are expected to be below 90 degree, you need to enter below and 90 for the questions that the code asks to enter.
 
 
 ## How to run the WettingAngleEstimator
