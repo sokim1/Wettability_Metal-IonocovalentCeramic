@@ -41,7 +41,7 @@ If you are new to Python, the easiest way of using the WettingAnglePredictor is 
     - Type-in mode requires a user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information, execute the first cell and the second cell sequentially.
 4. Find your results by clicking the folder icon on the left sidebar.
 
-If you are experienced in Python, feel free to use either .ipynb or .py file in whatever way is convenient for you.
+If you are experienced in Python, feel free to use codes provided in `prediction/WettingAnglePredictor_v1.ipynb` file in whatever way is convenient for you.
 
 
 
