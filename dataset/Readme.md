@@ -1,3 +1,4 @@
 - `database.csv`: a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file with experimentally measured metal-ionocovalent ceramic wetting angles collected from the literature.
+- `database-contributors.csv`: list of researchers who contributed to the construction of the database.
 - `input-matrix.csv`: database with the features, which are employed as parameters to predict wetting angles.
 - `input-matrix_after-feature-reduction.csv`: database with the features that remained after feature reduction based on pairwise correlations and feature importances.
