@@ -3,7 +3,7 @@
 This repository provides two main components:
 
 - Metal-ionocovalent ceramic wettability dataset.
-- WettingAngleEstimator: Python code for predicting the wettability of arbitrary metal-ionocovalent ceramic pairs.
+- WettingAnglePredictor: Python code for predicting the wettability of arbitrary metal-ionocovalent ceramic pairs.
 
 The following paper describes the details of the machine learning model developed to predict the metal-ionocovalent ceramic wettability: [Machine Learning of Metal-Ceramic Wettability](https://doi.org/10.1016/j.jmat.2021.03.014)
 
@@ -32,7 +32,7 @@ Specify the wetting angle range of interest. For example, if you are interested 
 
 ## How to run the WettingAnglePredictor
 
-If you are new to Python, the easiest way of using the WettingAngleEstimator is via [Google Colab Notebook](https://colab.research.google.com/drive/1lrOwH4iu7_jRMpPh8X1SnAMJn5eJCD8V?usp=sharing).
+If you are new to Python, the easiest way of using the WettingAnglePredictor is via [Google Colab Notebook](https://colab.research.google.com/drive/1lrOwH4iu7_jRMpPh8X1SnAMJn5eJCD8V?usp=sharing).
 
 1. Save a copy of the Google Colab Notebook by using "File > Save a copy in Drive".
 2. Execute the first cell; to execute a cell, hover the mouse over square brackets([ ]) on the upper left of the cell and press the play button that appears (or just press Shift- + Enter). It may take a few minutes to be completed.
