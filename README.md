@@ -47,7 +47,7 @@ If you are experienced in Python, feel free to use codes provided in `prediction
 
 ## How to contribute
 
-The prediction accuracy could be improved by increasing the number of datapoints used to train the machine learning model. We would appreciate it if you could please let us know using this [Google Form]() in case you find experimental results that are not in `dataset/database.csv` from literature or publish new experimental results by yourself. The database will be updated monthly and the name/affiliation of contributors will be listed in `dataset/database-contributors.csv`.
+The prediction accuracy could be improved by increasing the number of datapoints used to train the machine learning model. We would appreciate it if you could please let us know using this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSexDIOBS0Tbve2uUbCfaiWBIl0O0ttWUuunHcxtojoptjEaEQ/viewform?usp=sf_link) in case you find experimental results that are not in `dataset/database.csv` from literature or publish new experimental results by yourself. The database will be updated monthly and the name/affiliation of contributors will be listed in `dataset/database-contributors.csv`.
 
 
 
