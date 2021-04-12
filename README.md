@@ -15,7 +15,7 @@ The following paper describes the details of the machine learning model develope
 
 The current version can handle three different cases:
 - One metal-one ceramic pair (e.g., Fe and Si1O2)
-- One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): A user needs to provide .csv file with the list of ceramics. `prediction/lists_Li-LEIcandidates.csv` is an exemplary .csv file.
+- One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): A user needs to provide CSV file with the list of ceramics. `prediction/lists_Li-LEIcandidates.csv` is an exemplary .csv file.
 - One metal and a list of ceramics retrieved from Inorganic Crystal Structure Database (e.g., Al and all the oxides in the ICSD catalog that have a bandgap between 2 and 3 eV): A user needs to write a MATCHBOOK, which is material keywords with arguments. For example, to retrieve all the oxides in the ICSD catalog that have a bandgap between 2 and 3 eV, "species((O)), Egap(2*,*3),catalog(icsd)" should be entered. The way of writing it is explained in the Figure 1 and the Appendix C of this [article](https://doi.org/10.1016/j.commatsci.2017.04.036).
 
 *Note: The prediction accuracy for the material pairs other than metal-ionocovalent ceramic pairs could be much lower.*
@@ -35,11 +35,11 @@ Specify the wetting angle range of interest. For example, if you are interested 
 If you are new to Python, the easiest way of using the WettingAnglePredictor is via Google Colab Notebook.
 
 1. Save a copy of the [Google Colab Notebook](https://colab.research.google.com/drive/18aNeQ__aDx4gdNn-y7q1OJwmgm1dNyyW?usp=sharing) by using "File > Save a copy in Drive".
-2. Execute the first cell; to execute a cell, hover the mouse over square brackets([ ]) on the upper left of the cell and press the play button that appears (or just press Shift- + Enter). It may take a few minutes to be completed.
+2. Execute the first cell; to execute a cell, hover the mouse over a square bracket([ ]) on the upper left of the cell and press the play button that appears (or just press Shift- + Enter). It may take a few minutes to be completed.
 3. The current version provides two different ways of specifying the systems of interest; the interactive mode and the type-in mode. Each mode can be found below the first cell.
     - Interactive mode asks for the necessary information during operation. Execute the cell and answer the questions that appear.
     - Type-in mode requires a user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information, execute the first cell and the second cell sequentially.
-4. Find your results by clicking the folder icon on the left sidebar.
+4. Find the CSV file with the results in the session storage by clicking the folder icon on the left sidebar.
 
 If you are experienced in Python, feel free to use codes provided in `prediction/WettingAnglePredictor_v1.ipynb` file in whatever way is convenient for you.
 
@@ -47,7 +47,7 @@ If you are experienced in Python, feel free to use codes provided in `prediction
 
 ## How to contribute
 
-The prediction accuracy could be improved by increasing the number of datapoints used to train the machine learning model. We would appreciate it if you could please let us know using this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSexDIOBS0Tbve2uUbCfaiWBIl0O0ttWUuunHcxtojoptjEaEQ/viewform?usp=sf_link) in case you find experimental results that are not in `dataset/database.csv` from literature or publish new experimental results by yourself. The database will be updated monthly and the name/affiliation of contributors will be listed in `dataset/database-contributors.csv`.
+The prediction accuracy could be improved by increasing the number of data points used to train the machine learning model. We would appreciate it if you could please let us know using this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSexDIOBS0Tbve2uUbCfaiWBIl0O0ttWUuunHcxtojoptjEaEQ/viewform?usp=sf_link) in case you find experimental results that are not in `dataset/database.csv` from literature or publish new experimental results by yourself. The database will be updated monthly and the name/affiliation of contributors will be listed in `dataset/database-contributors.csv`.
 
 
 
