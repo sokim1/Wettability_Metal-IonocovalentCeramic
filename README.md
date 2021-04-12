@@ -36,7 +36,8 @@ Specify the wetting angle range of interest. For example, if you are interested 
 
 ## How to run the WettingAnglePredictor
 
-#### If you are new to Python, the easiest way of using the WettingAnglePredictor is via Google Colab Notebook.
+#### If you are new to Python, 
+the easiest way of using the WettingAnglePredictor is via Google Colab Notebook.
 
 1. Save a copy of the [Google Colab Notebook](https://colab.research.google.com/drive/18aNeQ__aDx4gdNn-y7q1OJwmgm1dNyyW?usp=sharing) by using "File > Save a copy in Drive".
 2. Execute the first cell; to execute a cell, hover the mouse over a square bracket([ ]) on the upper left of the cell and press the play button that appears (or just press Shift- + Enter). It may take a few minutes to be completed.
@@ -45,7 +46,8 @@ Specify the wetting angle range of interest. For example, if you are interested 
     - Type-in mode requires a user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information, execute the first cell and the second cell sequentially.
 4. Find the CSV file with the results in the session storage by clicking the folder icon on the left sidebar.
 
-#### If you prefer using the Jupyter Notebook, one easy way of installing prerequisites is via [conda](https://conda.io/docs/index.html).
+#### If you prefer using the Jupyter Notebook, 
+one easy way of installing prerequisites is via [conda](https://conda.io/docs/index.html).
 
 1. Install [conda](http://conda.pydata.org/).
 2. Run the following command to create a new [environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) named `wap` and activate the environment. 
@@ -67,7 +69,8 @@ pip install jupyter notebook
 
 4. Open the Jupyter Notebook and run the WettingAnglePredictor.
 
-#### If you are experienced in Python, feel free to use the codes provided in the `prediction/WettingAnglePredictor_v1.ipynb` file in whatever way is convenient for you.
+#### If you are experienced in Python, 
+feel free to use the codes provided in the `prediction/WettingAnglePredictor_v1.ipynb` file in whatever way is convenient for you.
 
 
 
