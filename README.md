@@ -5,7 +5,7 @@ This repository provides two main components:
 - Metal-ionocovalent ceramic wettability dataset.
 - WettingAnglePredictor: Python code for predicting the wettability of arbitrary metal-ionocovalent ceramic pairs.
 
-*Note: Most of the wetting angles listed in the dataset are measured via conventional sessile drop method and thus are close to advancing contact angles rather than receding or equilibrium contact angles, which require the application of controlled vibrations for the measurement. Accordingly, the predicted wetting angles are expected to be close to advancing contact angles.*
+*Note: Most of the wetting angles listed in the dataset are measured via the conventional sessile drop method and thus are close to advancing contact angles rather than receding or equilibrium contact angles, which require the application of controlled vibrations for the measurement. Accordingly, the predicted wetting angles are expected to be close to advancing contact angles.*
 
 The following paper describes the details of the machine learning model developed to predict the metal-ionocovalent ceramic wettability: So Yeon Kim and Ju Li, "[Machine Learning of Metal-Ceramic Wettability](https://doi.org/10.1016/j.jmat.2021.03.014)", Journal of Materiomics (2021).
 
@@ -15,8 +15,8 @@ The following paper describes the details of the machine learning model develope
 
 The current version can handle three different cases:
 - One metal-one ceramic pair (e.g., Fe and Si1O2)
-- One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): A user needs to provide CSV file with the list of ceramics. `prediction/lists_Li-LEIcandidates.csv` is an exemplary .csv file.
-- One metal and a list of ceramics retrieved from Inorganic Crystal Structure Database (e.g., Al and all the oxides in the ICSD catalog that have a bandgap between 2 and 3 eV): A user needs to write a MATCHBOOK, which is material keywords with arguments. For example, to retrieve all the oxides in the ICSD catalog that have a bandgap between 2 and 3 eV, "species((O)), Egap(2*,*3),catalog(icsd)" should be entered. The way of writing it is explained in the Figure 1 and the Appendix C of this [article](https://doi.org/10.1016/j.commatsci.2017.04.036).
+- One metal and a list of ceramics (e.g., Li and Li-ion/electron insulator (LEI) candidates): A user needs to provide a CSV file with the list of ceramics. `prediction/lists_Li-LEIcandidates.csv` is an exemplary .csv file.
+- One metal and a list of ceramics retrieved from Inorganic Crystal Structure Database (e.g., Al and all the oxides in the ICSD catalog that have a bandgap between 2 and 3 eV): A user needs to write a MATCHBOOK, which is material keywords with arguments. For example, to retrieve all the oxides in the ICSD catalog that have a bandgap between 2 and 3 eV, "species((O)), Egap(2*,*3),catalog(icsd)" should be entered. The way of writing it is explained in Figure 1 and Appendix C of this [article](https://doi.org/10.1016/j.commatsci.2017.04.036).
 
 *Note: The prediction accuracy for the material pairs other than metal-ionocovalent ceramic pairs could be much lower.*
 
@@ -41,7 +41,7 @@ If you are new to Python, the easiest way of using the WettingAnglePredictor is 
     - Type-in mode requires a user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information, execute the first cell and the second cell sequentially.
 4. Find the CSV file with the results in the session storage by clicking the folder icon on the left sidebar.
 
-If you are experienced in Python, feel free to use the codes provided in `prediction/WettingAnglePredictor_v1.ipynb` file in whatever way is convenient for you.
+If you are experienced in Python, feel free to use the codes provided in the `prediction/WettingAnglePredictor_v1.ipynb` file in whatever way is convenient for you.
 
 
 
