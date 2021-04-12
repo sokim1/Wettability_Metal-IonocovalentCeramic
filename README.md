@@ -9,6 +9,9 @@ This repository provides two main components:
 
 The following paper describes the details of the machine learning model developed to predict the metal-ionocovalent ceramic wettability: So Yeon Kim and Ju Li, "[Machine Learning of Metal-Ceramic Wettability](https://doi.org/10.1016/j.jmat.2021.03.014)", Journal of Materiomics (2021).
 
+
+
+
 ## Workflow of the WettingAnglePredictor
 
 #### 1. Define metal-ionocovalent ceramic pairs of interest 
@@ -27,6 +30,7 @@ Specify the minimum temperature, the maximum temperature, and the temperature in
 #### 3. Specify the wetting angle range of interest
 
 Specify the wetting angle range of interest. For example, if you are interested only in metal-ionocovalent ceramic pairs of which wetting angles are expected to be below 90 degree, you need to enter "-90". Other examples are as follows: "50-", "0-90", "all", etc.
+
 
 
 
@@ -66,9 +70,11 @@ conda install pywin32
 
 
 
+
 ## How to contribute
 
 The prediction accuracy could be improved by increasing the number of data points used to train the machine learning model. We would appreciate it if you could please let us know using this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSexDIOBS0Tbve2uUbCfaiWBIl0O0ttWUuunHcxtojoptjEaEQ/viewform?usp=sf_link) in case you find experimental results that are not in `dataset/database.csv` from literature or publish new experimental results by yourself. The database will be updated monthly and the name/affiliation of contributors will be listed in `dataset/database-contributors.csv`.
+
 
 
 
