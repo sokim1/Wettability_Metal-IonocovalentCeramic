@@ -5,7 +5,7 @@ This repository provides two main components:
 - Metal-ionocovalent ceramic wettability dataset.
 - WettingAnglePredictor: Python code for predicting the wettability of arbitrary metal-ionocovalent ceramic pairs.
 
-*Note: Most of the wetting angles listed in the dataset are measured via conventional sessile drop method and thus are close to advancing contact angles rather than receding or equilibrium contact angles, which require the application of controlled vibrations for the measurement. Accordingly, the predicted wetting angles are expected to be close to advancing contact angles.
+*Note: Most of the wetting angles listed in the dataset are measured via conventional sessile drop method and thus are close to advancing contact angles rather than receding or equilibrium contact angles, which require the application of controlled vibrations for the measurement. Accordingly, the predicted wetting angles are expected to be close to advancing contact angles.*
 
 The following paper describes the details of the machine learning model developed to predict the metal-ionocovalent ceramic wettability: So Yeon Kim and Ju Li, "[Machine Learning of Metal-Ceramic Wettability](https://doi.org/10.1016/j.jmat.2021.03.014)", Journal of Materiomics (2021).
 
