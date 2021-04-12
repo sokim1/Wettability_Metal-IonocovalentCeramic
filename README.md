@@ -3,7 +3,7 @@
 This repository provides two main components:
 
 - Metal-ionocovalent ceramic wettability dataset.
-- WettingAnglePredictor: Python code for predicting the wettability of arbitrary metal-ionocovalent ceramic pairs.
+- WettingAnglePredictor (WAP): Python code for predicting the wettability of arbitrary metal-ionocovalent ceramic pairs.
 
 *Note: Most of the wetting angles listed in the dataset are measured via the conventional sessile drop method and thus are close to advancing contact angles rather than receding or equilibrium contact angles, which require the application of controlled vibrations for the measurement. Accordingly, the predicted wetting angles are also expected to be close to advancing contact angles.*
 
@@ -40,6 +40,27 @@ If you are new to Python, the easiest way of using the WettingAnglePredictor is 
     - Interactive mode asks for the necessary information during operation. Execute the cell and answer the questions that appear.
     - Type-in mode requires a user to enter the necessary information before executing the cell. Follow the instructions written in the cell. After entering all the information, execute the first cell and the second cell sequentially.
 4. Find the CSV file with the results in the session storage by clicking the folder icon on the left sidebar.
+
+If you prefer using the Jupyter Notebook, one easy way of installing prerequisites is via [conda](https://conda.io/docs/index.html).
+
+1. Install [conda](http://conda.pydata.org/).
+2. Run the following command to create a new [environment](https://conda.io/docs/user-guide/tasks/manage-environments.html) named `wap` and activate the environment. 
+
+```bash
+conda upgrade conda
+conda create --name wap
+conda activate wap
+```
+
+3. Install all the prerequisites by running:
+
+```bash
+conda install -c conda-forge pymatgen==2020.12.31
+pip install matminer
+conda install pywin32
+```
+
+4. Open the Jupyter Notebook and run the WettingAnglePredictor.
 
 If you are experienced in Python, feel free to use the codes provided in the `prediction/WettingAnglePredictor_v1.ipynb` file in whatever way is convenient for you.
 
