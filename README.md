@@ -62,6 +62,7 @@ conda activate wap
 conda install -c conda-forge pymatgen==2020.12.31
 pip install matminer
 conda install pywin32
+pip install jupyter notebook
 ```
 
 4. Open the Jupyter Notebook and run the WettingAnglePredictor.
