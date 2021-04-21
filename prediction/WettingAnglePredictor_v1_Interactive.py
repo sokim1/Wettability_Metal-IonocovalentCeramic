@@ -84,7 +84,7 @@ if Tsplit[2] != 0:
 
 preds = sys_feature.columns[2:]
 
-rf_otm = joblib.load('https://github.com/sokim1/Wettability_Metal-IonocovalentCeramic/blob/a3042245e15c6b308ff4e72024d6b5addff2dcf3/prediction/wap_'+ model + '.sav')
+rf_otm = joblib.load('wap_'+ model + '.sav')
 if model == 'reduced':
   preds = ['Temp', 'Me_MagpieData mean CovalentRadius',
        'Me_MagpieData mean Electronegativity', 'Me_MagpieData mean NdValence',
